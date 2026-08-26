@@ -1,0 +1,228 @@
+/* ==========================================
+   ESTILOS GENERALES - EDICIONES FARES
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.contenedor-principal {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* --- ENCABEZADO Y MENÚ --- */
+.encabezado {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 12px 20px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.menu {
+    background-color: #e2e6ea;
+    padding: 6px 20px;
+    border-bottom: 1px solid #d6d8db;
+}
+
+.menu a {
+    color: #333333;
+    text-decoration: none;
+    margin-right: 18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #0056b3;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.contenido {
+    padding: 15px;
+}
+
+.clientes-contenedor {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* --- FORMULARIO (IZQUIERDA) --- */
+.formulario-cliente {
+    flex: 1;
+    border: 1px solid #b8daff;
+    background-color: #f8f9fa;
+}
+
+.titulo-formulario {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.formulario-contenido {
+    padding: 12px 15px;
+}
+
+.formulario-contenido label {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #212529;
+}
+
+.formulario-contenido .form-control {
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    font-size: 12px;
+    height: auto;
+    padding: 4px 8px;
+}
+
+.formulario-contenido .form-control:focus {
+    border-color: #6c757d;
+    box-shadow: none;
+}
+
+.btn-fares {
+    background-color: #495057;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 5px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-fares:hover {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+/* --- TABLA (DERECHA) --- */
+.clientes-registrados {
+    flex: 1.1;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+}
+
+.tabla-clientes {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.tabla-clientes thead th {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.tabla-clientes tbody td {
+    padding: 6px 10px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    color: #212529;
+}
+
+.tabla-clientes tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+/* --- BOTONES DE ACCIÓN EN TABLA --- */
+.acciones {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.btn-accion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border-radius: 2px;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-modificar {
+    background-color: #388e3c; /* Verde sobrio */
+}
+
+.btn-modificar:hover {
+    background-color: #2e7d32;
+}
+
+.btn-eliminar {
+    background-color: #d32f2f; /* Rojo sobrio */
+}
+
+.btn-eliminar:hover {
+    background-color: #c62828;
+}
+
+/* --- PAGINACIÓN SIMPLIFICADA --- */
+.paginacion-contenedor {
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+.pagination {
+    margin: 0;
+}
+
+.pagination .page-item .page-link {
+    color: #495057;
+    border-color: #ced4da;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 0;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #e2e6ea;
+    color: #212529;
+}
+
+/* --- PIE DE PÁGINA --- */
+.pie {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 11px;
+    margin-top: 15px;
+}
